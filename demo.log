@@ -1,0 +1,6 @@
+2025-06-08 12:43:41,707 - INFO - Connecting to sqlite...
+2025-06-08 12:43:41,723 - INFO - 
+Processing files: demo.csv
+2025-06-08 12:43:41,867 - INFO - Finished demo.csv → Valid: 3, Invalid: 0
+2025-06-08 12:43:41,896 - INFO - Inserted 3 rows into table 'demo'
+2025-06-08 12:43:41,897 - INFO - Connections closed.
