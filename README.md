@@ -1,9 +1,8 @@
 # FastCSV
 
-** A fast, schema-aware CSV ingestion and validation pipeline built with Python**
-FastCSV is a simple CLI tool that reads multiple '.csv' files, validates them against JSON-based schemas, and stores clean data into SQLite or ProstgreSQL databases.
+**A fast, schema-aware CSV ingestion and validation pipeline built with Python**
 
----
+FastCSV is a simple CLI tool that reads multiple '.csv' files, validates them against JSON-based schemas, and stores clean data into SQLite or ProstgreSQL databases.
 
 ## Features
 
@@ -14,8 +13,6 @@ FastCSV is a simple CLI tool that reads multiple '.csv' files, validates them ag
 - Optional export of invalid rows.
 - Fully command-line control.
 - Modular codebase: easy to extend with your won validators or exporters.
-
----
 
 ## Installation
 
@@ -33,8 +30,6 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-
----
 
 ## CLI Flags
 
@@ -66,8 +61,6 @@ python main.py \
   --log
 ```
 
----
-
 ## Example Output
 
 ```bash
@@ -86,8 +79,6 @@ Invalid rows: 1
 Inserted rows: 2
 ```
 
----
-
 ## Schema Format
 
 Schemas are defines as .json files and auto-matched by filename. Example:
@@ -103,22 +94,16 @@ Schemas are defines as .json files and auto-matched by filename. Example:
 
 If no schema is found, FastCSV infers one from the first few rows.
 
----
-
 ## Tech Stack
 
 - Python 3.12.4
 - SQLite / PostgreSQL
 - argparse, csv, json, tqdm
 
----
-
 ## License
 
 This project is licensed under the MIT License.
 See [`LICENSE`](./LICENSE) for details.
-
----
 
 ## Contributions
 
